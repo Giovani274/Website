@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="belanja.html">FrameFluent</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Tentang Kami</a></li>
+        <li><a href="#">Produk</a></li>
+        <li><a href="#">Belanja</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+    <a href="#" class="btn-marketplace">Account</a>
+</header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 20px auto;
+      display: flex;
+      gap: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .product-images {
+      flex: 1;
+    }
+    .product-images img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .thumbnail-container {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .thumbnail-container img {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      transition: border 0.3s;
+    }
+    .thumbnail-container img:hover {
+      border: 2px solid #007bff;
+    }
+    .product-details {
+      flex: 2;
+    }
+    .product-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .product-price {
+      font-size: 28px;
+      font-weight: bold;
+      color: #f57224;
+      margin-bottom: 10px;
+    }
+    .product-discount {
+      font-size: 16px;
+      color: #999;
+      text-decoration: line-through;
+      margin-left: 10px;
+    }
+    .color-options {
+      margin: 15px 0;
+    }
+    .color-options span {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 14px;
+    }
+    .color-options button {
+      border: 1px solid #ddd;
+      background: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .color-options button.active {
+      border: 2px solid #007bff;
+    }
+    .product-specs {
+      margin: 20px 0;
+    }
+    .product-specs h3 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .product-specs ul {
+      list-style: none;
+      padding: 0;
+    }
+    .product-specs ul li {
+      font-size: 14px;
+      margin: 5px 0;
+    }
+    .cart-actions {
+      margin-top: 20px;
+    }
+    .cart-actions button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    .add-to-cart {
+      background: #007bff;
+      color: #fff;
+    }
+    .buy-now {
+      background: #28a745;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Bagian Gambar -->
+    <div class="product-images">
+      <img src="VGA.3.jpg" alt="Produk Utama">
+      <div class="thumbnail-container">
+      </div>
+    </div>
+
+    <!-- Bagian Detail Produk -->
+    <div class="product-details">
+      <h1 class="product-title">VGA 2050</h1>
+      <div class="product-price">
+        Rp 4.000.000.
+        <span class="product-discount">Rp 5.000.000.</span>
+      </div>
+
+      <!-- Pilihan Warna -->
+      <div class="color-options">
+        <span>Pilih warna:</span>
+        <button class="active">Creme</button>
+        <button>Green</button>
+        <button>Purple</button>
+      </div>
+
+      <!-- Detail Produk -->
+      <div class="product-specs">
+        <h3>Detail</h3>
+        <ul>
+            <li>Kondisi: Baru</li>
+            <li>Min. Pemesanan: 1 Buah</li>
+            <li>Etalase: Semua Etalase</li>
+            <li>- 3 Colour: Creme, Purple, Green</li>
+            <li>- Ada Box dan Bergaransi 2 Tahun</li>
+            <li>- Tidak bisa COD</li>
+            <li>- Awet sampe tua.</li>
+        </ul>
+      </div>
+
+      <!-- Tombol Aksi -->
+      <div class="cart-actions">
+        <button class="add-to-cart">+ Keranjang</button>
+        <button class="buy-now">Beli Langsung</button>
+      </div>
+    </div>
+  </div>
+  <div class="review-section">
+    <div class="review-header">
+      <div class="rating">
+        <span class="rating-score">RATING 5.0</span> / 5.0
+      </div>
+      <div class="review-stats">
+        <p>100% pembeli merasa puas</p>
+        <p>1 rating • 1 ulasan</p>
+      </div>
+    <a href="#" class="see-all-reviews">Lihat Semua Ulasan</a>
+  </div>  
+</div>
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="LOGO.7.jpg" alt="framefluent Logo">
+            </div>
+            <p>FrameFluent adalah Store yang Menjual barang Elektronik berjenis VGA yang di kelola oleh 4 orang.</p>
+            <div class="footer-contact">
+                <span><img src="EMAIL.8.jpg" alt="Email Icon"> framefluentstore@gmail.com</span>
+                <span><img src="PHONE.9.jpg" alt="Phone Icon"> 1700 2205</span>
+            </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>FrameFluent</h3>
+            <ul>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">Pusat Bantuan</a></li>
+            </ul>
+        </div>
+  
+        <!-- Business Solutions -->
+        <div class="footer-section">
+            <h3>Belanja Produk</h3>
+            <ul>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">VGA 4090</a></li>
+                <li><a href="#">VGA 3050</a></li>
+                <li><a href="#">VGA 2050</a></li>
+                <li><a href="#">VGA 1660</a></li>
+            </ul>
+        </div>
+  
+        <!-- Additional Links -->
+        <div class="footer-section">
+            <h3>Lain-Lain</h3>
+            <ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Produk</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2025</p>
+    </div>
+    <div class="footer-language">
+        <img src="flag.12.png" alt="Bahasa Indonesia">  
+    </div>
+  </footer>
+</body>
+</html>

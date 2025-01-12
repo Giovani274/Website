@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>framefluent login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f6f7f9;
+    }
+
+    .container {
+      display: flex;
+      max-width: 900px;
+      width: 100%;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      padding: 20px;
+      background-color: #f6f7f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .left img {
+      width: 80%;
+      max-width: 300px;
+    }
+
+    .left p {
+      font-size: 16px;
+      color: #333;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .right {
+      flex: 1;
+      padding: 40px;
+    }
+
+    .right h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    .help {
+      font-size: 12px;
+      color: #1e8bff;
+      text-align: right;
+      margin-top: 5px;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #ddd;
+      color: #fff;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 15px;
+      cursor: not-allowed;
+    }
+
+    .alternative-login {
+      text-align: center;
+      font-size: 14px;
+      color: #aaa;
+      margin: 15px 0;
+    }
+
+    .social-buttons button {
+      width: 100%;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 14px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .social-buttons button img {
+      width: 20px;
+      margin-right: 10px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    footer a {
+      color: #1e8bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">   
+    <div class="left">
+      <img src="LOGO.7.jpg" alt="FrameFluent Icon">
+      <p>Masuk ke FrameFluent dan rasakan kemudahannya.</p>
+    </div>
+    <div class="right">
+      <h2>Masuk ke FrameFluent</h2>
+      <div class="form-group">
+        <label for="email">Nomor HP atau Email</label>
+        <input type="text" id="email" placeholder="Contoh: 0811122233344">
+      </div>
+      <a href="#" class="help">Butuh bantuan?</a>
+      <button class="btn" disabled>Selanjutnya</button>
+      <p class="alternative-login">atau masuk dengan</p>
+      <div class="social-buttons">
+        <button>
+          <img src="chrome.16.png" alt="QR Icon"> Chrome
+        </button>
+        <button>
+          <img src="goologo.15.png" alt="Google Icon"> Google
+        </button>
+      </div>
+    </div>
+</div>
+</body>
+</html>

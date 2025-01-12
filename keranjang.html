@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FrameFluentStore</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="navbar">
+        <div class="logo">
+        <a href="index.html">FrameFluent</a>
+        </div>
+        <nav>
+      <ul>
+        <li><a href="keranjang.html">Keranjang</a></li>
+        <li><a href="tentang.html">Produk</a></li>
+        <li><a href="belanja.html">Belanja</a></li>
+        <li><a href="#">Hubungi Kami</a></li>
+      </ul>
+    </nav>
+<a href="login.html" class="btn-marketplace">Account</a>
+</header>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f8fa;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 20px;
+    }
+
+    .cart {
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-right: -920px;
+    }
+
+    .cart-items {
+        width: 65%;
+    }
+
+    .cart-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+    }
+
+    .cart-item img {
+        width: 80px;
+        height: 80px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+
+    .cart-item-info {
+        flex: 1;
+    }
+
+    .cart-item-info h4 {
+        margin: 0 0 5px;
+        font-size: 16px;
+    }
+
+    .cart-item-info p {
+        margin: 0;
+        color: #777;
+    }
+
+    .cart-item-price {
+        font-weight: bold;
+    }
+
+    .summary {
+        width: 30%;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .summary h3 {
+        margin: 0 0 20px;
+        font-size: 18px;
+    }
+
+    .summary-total {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        background-color: #00b14f;
+        color: #fff;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: #019a44;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+<div class="cart">
+    <!-- Cart Items -->
+    <div class="cart-items">
+        <div class="cart-item">
+            <img src="VGA.20.jpg" alt="Product Image">
+            <div class="cart-item-info">
+                <h4>VGA 5090</h4>
+                <p>Flexibel</p>
+            </div>
+            <div class="cart-item-price">
+                Rp 40.000.000 <span style="text-decoration: line-through; color: #999;">Rp 50.000.000</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Summary Section -->
+    <div class="summary">
+        <h3>Ringkasan belanja</h3>
+        <div class="summary-total">
+            <span>Total</span>
+            <span>Rp 40.000.000</span>
+        </div>
+        <button class="btn">Beli (1)</button>
+    </div>
+</div>
+</div>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 16px;
+      padding: 20px;
+      margin-left: 350px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+    .card .content {
+      padding: 16px;
+    }
+    .card .content h4 {
+      font-size: 16px;
+      margin: 0 0 8px;
+      color: #333;
+    }
+    .card .content p {
+      margin: 4px 0;
+      font-size: 14px;
+      color: #555;
+    }
+    .card .content .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #f57224;
+      margin: 8px 0;
+    }
+    .card .content .location {
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <a href="produk1.html"><img src="VGA.1.jpg" alt="Product"></a>
+      <div class="content">
+        <h4>VGA 4090</h4>
+        <p class="price">Rp 35.000.000.</p>
+        <p class="location">Ciherang</p>
+      </div>
+    </div>
+    <div class="card">
+      <a href="produk2.html"><img src="VGA.2.jpg" alt="Product"></a>
+      <div class="content">
+        <h4>VGA 3050</h4>
+        <p class="price">Rp 7.000.000.</p>
+        <p class="location">Badami</p>
+      </div>
+    </div>
+    <div class="card">
+      <a href="produk3.html"><img src="VGA.3.jpg" alt="Product"></a>
+      <div class="content">
+        <h4>VGA 2050</h4>
+        <p class="price">Rp 5.000.000.</p>
+        <p class="location">Bintang Alam</p>
+      </div>
+    </div>
+    <div class="card">
+      <a href="produk4.html"><img src="VGA.4.jpg" alt="Product"></a>
+      <div class="content">
+        <h4>VGA 1660</h4>
+        <p class="price"> Rp 3.000.000.</p>
+        <p class="location">Karaba</p>
+      </div>
+    </div>
+    <!-- Tambahkan produk lainnya sesuai kebutuhan -->
+  </div>
+  <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Description -->
+        <div class="footer-section">
+            <div class="footer-logo">
+                <img src="LOGO.7.jpg" alt="framefluent Logo">
+            </div>
+            <p>FrameFluent adalah Store yang Menjual barang Elektronik berjenis VGA yang di kelola oleh 4 orang.</p>
+            <div class="footer-contact">
+                <span><img src="EMAIL.8.jpg" alt="Email Icon"> framefluentstore@gmail.com</span>
+                <span><img src="PHONE.9.jpg" alt="Phone Icon"> 1700 2205</span>
+            </div>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="footer-section">
+            <h3>FrameFluent</h3>
+            <ul>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Layanan</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">Pusat Bantuan</a></li>
+            </ul>
+        </div>
+  
+        <!-- Business Solutions -->
+        <div class="footer-section">
+            <h3>Belanja Produk</h3>
+            <ul>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">VGA 4090</a></li>
+                <li><a href="#">VGA 3050</a></li>
+                <li><a href="#">VGA 2050</a></li>
+                <li><a href="#">VGA 1660</a></li>
+            </ul>
+        </div>
+  
+        <!-- Additional Links -->
+        <div class="footer-section">
+            <h3>Lain-Lain</h3>
+            <ul>
+                <li><a href="#">Event</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Produk</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Copyright © 2025</p>
+    </div>
+    <div class="footer-language">
+        <img src="flag.12.png" alt="Bahasa Indonesia">  
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
